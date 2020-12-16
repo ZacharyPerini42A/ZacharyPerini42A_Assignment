@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423291040229782034}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7056152, w: 0.7085952}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -1.27, y: 7.217, z: 0}
-  m_LocalScale: {x: 0.49785915, y: 0.50097716, z: 0.7534646}
+  m_LocalScale: {x: 0.49785915, y: 0.50097716, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.759}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!212 &423291040229782035
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -96,5 +96,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints: []
-  moveSpeed: 2
   waveConfig: {fileID: 11400000, guid: a8eaeb7600304a84db8b8a77bbb36fa5, type: 2}

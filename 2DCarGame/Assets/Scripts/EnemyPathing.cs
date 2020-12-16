@@ -36,6 +36,11 @@ public class EnemyPathing : MonoBehaviour
         }
     }
 
+    //setting up a WaveConfig
+    public void SetWaveConfig(WaveConfig waveConfigToSet)
+    {
+        waveConfig = waveConfigToSet;
+    }
 
 
 
