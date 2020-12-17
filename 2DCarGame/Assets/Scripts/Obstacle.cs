@@ -5,6 +5,7 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     [SerializeField] float health = 100;
+    //add explosion here
 
     //reduces health whenever enemy collides with a gameObject which has DamageDealer component
     private void OnTriggerEnter2D(Collider2D other)
@@ -20,8 +21,7 @@ public class Obstacle : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        
-
+       
     }
 
     // Start is called before the first frame update
