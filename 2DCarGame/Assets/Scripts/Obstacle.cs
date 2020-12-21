@@ -5,24 +5,35 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     [SerializeField] float health = 100;
-    //add explosion here
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] float explosionDuration;
+
 
     //reduces health whenever enemy collides with a gameObject which has DamageDealer component
     private void OnTriggerEnter2D(Collider2D other)
     {
-
-        //access the Damage Dealer from the "other" object which hit the enemy
-        //and depending on the damage reduce health
 
         DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
         health -= damageDealer.GetDamage();
         
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
        
     }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+        //create an explosion particle
+        GameObject explosion = Instantiate(deathVFX, transform.position, Quaternion.identity);
+        //destroy after 1 sec
+        Destroy(explosion, 1f);
+
+    }
+
+
 
     // Start is called before the first frame update
     void Start()
