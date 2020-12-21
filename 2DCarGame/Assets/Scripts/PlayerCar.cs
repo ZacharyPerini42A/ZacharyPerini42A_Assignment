@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCar : MonoBehaviour
 {
@@ -10,8 +11,7 @@ public class PlayerCar : MonoBehaviour
     [SerializeField] float health = 100f;
     [SerializeField] AudioClip playerDeathSound;
     [SerializeField] [Range(0, 1)] float playerDeathSoundVolume = 0.75f;
-
-
+    
 
     float xMin, xMax;
 
@@ -76,6 +76,7 @@ public class PlayerCar : MonoBehaviour
     {
         Destroy(gameObject);
         AudioSource.PlayClipAtPoint(playerDeathSound, Camera.main.transform.position, playerDeathSoundVolume);
+        SceneManager.LoadScene("Over");
     }
 
 }

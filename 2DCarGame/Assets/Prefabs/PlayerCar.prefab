@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   padding: 1
-  health: 15
+  health: 50
   playerDeathSound: {fileID: 8300000, guid: 1501497fb3509f74189c11958fe9344e, type: 3}
   playerDeathSoundVolume: 0.75
 --- !u!114 &-6767102051085302043
