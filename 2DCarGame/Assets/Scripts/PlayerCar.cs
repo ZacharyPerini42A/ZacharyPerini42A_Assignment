@@ -8,6 +8,9 @@ public class PlayerCar : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 1f;
     [SerializeField] float health = 100f;
+    [SerializeField] AudioClip playerDeathSound;
+    [SerializeField] [Range(0, 1)] float playerDeathSoundVolume = 0.75f;
+
 
 
     float xMin, xMax;
@@ -65,7 +68,14 @@ public class PlayerCar : MonoBehaviour
         dmgDealer.Hit();
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
     }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+        AudioSource.PlayClipAtPoint(playerDeathSound, Camera.main.transform.position, playerDeathSoundVolume);
+    }
+
 }

@@ -7,21 +7,25 @@ public class Obstacle : MonoBehaviour
     [SerializeField] float health = 100;
     [SerializeField] GameObject deathVFX;
     [SerializeField] float explosionDuration;
+    [SerializeField] AudioClip enemyDeathSound;
+    [SerializeField] [Range(0, 1)] float enemyDeathSoundVolume = 0.75f;
+
+    private float hit;
 
 
     //reduces health whenever enemy collides with a gameObject which has DamageDealer component
     private void OnTriggerEnter2D(Collider2D other)
     {
-
         DamageDealer damageDealer = other.gameObject.GetComponent<DamageDealer>();
         health -= damageDealer.GetDamage();
-        
+
         if (health <= 0)
         {
-            Die();
+           Die();
         }
-       
     }
+           
+
 
     private void Die()
     {
@@ -30,8 +34,10 @@ public class Obstacle : MonoBehaviour
         GameObject explosion = Instantiate(deathVFX, transform.position, Quaternion.identity);
         //destroy after 1 sec
         Destroy(explosion, 1f);
-
+        AudioSource.PlayClipAtPoint(enemyDeathSound, Camera.main.transform.position, enemyDeathSoundVolume);
     }
+
+
 
 
 
