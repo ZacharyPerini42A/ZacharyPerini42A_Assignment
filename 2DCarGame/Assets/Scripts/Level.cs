@@ -25,6 +25,8 @@ public class Level : MonoBehaviour
     {
         //loads the scene with name LaserDefender
         SceneManager.LoadScene("Game");
+        FindObjectOfType<GameSession>().ResetGame();
+        FindObjectOfType<ScoreDisplay>().ResetScore();
     }
 
     public void LoadGameOver()
