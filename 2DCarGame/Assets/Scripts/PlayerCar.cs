@@ -8,12 +8,12 @@ public class PlayerCar : MonoBehaviour
 
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 1f;
-    [SerializeField] float health = 100f;
+    public float health = 50f;
     [SerializeField] AudioClip playerDeathSound;
     [SerializeField] [Range(0, 1)] float playerDeathSoundVolume = 0.75f;
-    
 
     float xMin, xMax;
+
 
     private void Move()
     {
@@ -38,6 +38,7 @@ public class PlayerCar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         SetUpMoveBoundaries();
     }
 

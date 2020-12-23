@@ -244,6 +244,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7000095409017676025, guid: 674ab67e2bfa0df44a4f90a0c665a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadStartGame
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 674ab67e2bfa0df44a4f90a0c665a188, type: 3}
 --- !u!1 &586955989

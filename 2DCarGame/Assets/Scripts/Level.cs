@@ -11,7 +11,7 @@ public class Level : MonoBehaviour
     IEnumerator WaitAndLoad()
     {
         yield return new WaitForSeconds(delayInSeconds);
-        SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("Over");
     }
 
 
@@ -23,10 +23,19 @@ public class Level : MonoBehaviour
 
     public void LoadGame()
     {
-        //loads the scene with name LaserDefender
         SceneManager.LoadScene("Game");
         FindObjectOfType<GameSession>().ResetGame();
         FindObjectOfType<ScoreDisplay>().ResetScore();
+    }
+
+    public void LoadStartGame()
+    {
+        SceneManager.LoadScene("Game");
+    }
+
+    public void LoadGameAfterWin_()
+    {
+        SceneManager.LoadScene("Game");
     }
 
     public void LoadGameOver()
