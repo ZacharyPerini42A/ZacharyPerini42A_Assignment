@@ -1,4 +1,0 @@
-When i tried to commit the iOS build to my main repository the file size became too large to push so i put it in my MCAST onedrive
-
-here is the link:
-https://mcastedu-my.sharepoint.com/:u:/g/personal/zachary_perini_e21323_mcast_edu_mt/EScCgdwoEQNAoUbsi3KjND4BVRaXf-4GfnQ34a48hr3khw?e=XnjC2y
