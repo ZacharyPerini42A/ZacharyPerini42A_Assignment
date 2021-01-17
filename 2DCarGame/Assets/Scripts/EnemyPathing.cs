@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyPathing : MonoBehaviour
 {
@@ -29,10 +30,17 @@ public class EnemyPathing : MonoBehaviour
                 waypointIndex++;
             }
         }
-        //if enemy moved to all waypoints
+        //if enemy moved to all waypoints destroy and add score
         else
         {
             Destroy(gameObject);
+            ScoreDisplay.scoreValue += 5;
+            if (ScoreDisplay.scoreValue == 100)
+            {
+                SceneManager.LoadScene("Win");
+                FindObjectOfType<ScoreDisplay>().ResetScore();
+                FindObjectOfType<GameSession>().ResetGame();
+            }
         }
     }
 

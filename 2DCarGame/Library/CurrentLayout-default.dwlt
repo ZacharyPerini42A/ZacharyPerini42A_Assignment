@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Console
   m_RootView: {fileID: 7}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 242}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 18
+  controlID: 111
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,7 +175,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 1113, y: 271}
   m_MaxSize: {x: 26008, y: 10021}
   vertical: 0
-  controlID: 17
+  controlID: 16
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -400,7 +400,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 32f8ffff4cf8ffff48f9ffffa0f9ffffa4f9ffffeef9ffff5afbffff
+      m_ExpandedIDs: 34deffff4edeffff48dfffffa0dfffffa4dfffffeedfffff5afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -462,21 +462,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 35
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: 35
   m_LastProjectPath: C:\Users\zacha\Desktop\MCAST folders\PCG\GitHub-repos\ZacharyPerini4.2A_Assignment\2DCarGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ba3e0000
-    m_LastClickedID: 16058
-    m_ExpandedIDs: 000000008e3e000000ca9a3b
+    m_SelectedIDs: 9a3e0000
+    m_LastClickedID: 16026
+    m_ExpandedIDs: 000000008c3e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -504,7 +504,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008e3e0000
+    m_ExpandedIDs: 000000008c3e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: a63d00009a3c00009e3c00001a3d000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -685,9 +685,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.6512297, y: -4.1585765, z: -19.844723}
+    m_Target: {x: -0.44943058, y: -4.0863943, z: -20.20572}
     speed: 2
-    m_Value: {x: -0.6512297, y: -4.1585765, z: -19.844723}
+    m_Value: {x: -0.44943058, y: -4.0863943, z: -20.20572}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -738,9 +738,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 6.930716
+    m_Target: 6.257245
     speed: 2
-    m_Value: 6.930716
+    m_Value: 6.257245
   m_Ortho:
     m_Target: 1
     speed: 2
